@@ -18,7 +18,7 @@ class Blog(Base):
 
     @property
     def like_count(self):
-        return self.likes.count()  # Nechta like borligini hisoblaydi
+        return self.likes.count()
 
 
 class Comment(Base):

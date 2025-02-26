@@ -1,0 +1,102 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Sayohat</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <!-- <style>
+        body {
+            background-image: url("{% static 'images/bgimg.png' %}");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style> -->
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">🌍 Virtual Sayohat</div>
+            <ul class="nav-links">
+                <li><a href="#home">Bosh sahifa</a></li>
+                <li><a href="#countries">Mamlakatlar</a></li>
+                <li><a href="#agencies">Agentliklar</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#register">Ro‘yxatdan o‘tish</a></li>
+            </ul>
+            <button class="menu-toggle">☰</button>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h1>Sayohatingizni biz bilan rejalashtiring!</h1>
+        <p>Dunyo bo‘ylab ajoyib joylarni kashf eting.</p>
+        <button class="explore-btn">Boshlash</button>
+    </section>
+
+    <section id="countries" class="countries">
+        <h2>Ommabop Mamlakatlar</h2>
+        <div class="country-list">
+            <div class="country-card">
+                <img src="{% static 'images/paris.png' %}" alt="Paris">
+                <h3>Fransiya</h3>
+            </div>
+            <div class="country-card">
+                <img src="{% static 'images/paris.png' %}" alt="Japan">
+                <h3>Yaponiya</h3>
+            </div>
+            <div class="country-card">
+                <img src="{% static 'images/paris.png' %}" alt="Egypt">
+                <h3>Misr</h3>
+            </div>
+            <div class="country-card">
+                <img src="{% static 'images/paris.png' %}" alt="Egypt">
+                <h3>Misr</h3>
+            </div>
+            <div class="country-card">
+                <img src="{% static 'images/paris.png' %}" alt="Egypt">
+                <h3>Misr</h3>
+            </div>
+            <div class="country-card">
+                <img src="{% static 'images/paris.png' %}" alt="Egypt">
+                <h3>Misr</h3>
+            </div>
+            <div class="country-card">
+                <img src="{% static 'images/paris.png' %}" alt="Egypt">
+                <h3>Misr</h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="agencies" class="agencies">
+        <h2>Sayohat Agentliklari</h2>
+        <ul>
+            <li>✈️ TravelPro</li>
+            <li>🏝️ ExploreWorld</li>
+            <li>🌍 AdventureTime</li>
+        </ul>
+    </section>
+
+    <section id="blog" class="blog">
+        <h2>Sayohatchilar Blogi</h2>
+        <div class="blog-list">
+            <div class="blog-card">
+                <h3>Yaponiyada bahor fasli</h3>
+                <p>🌸 Sakura gullarining betakror go‘zalligi.</p>
+            </div>
+            <div class="blog-card">
+                <h3>Parijda bir hafta</h3>
+                <p>🗼 Eifell minorasi va ko‘cha san’ati.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Virtual Sayohat | Sayohatni rejalashtirish platformasi</p>
+    </footer>
+
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>
